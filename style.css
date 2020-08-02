@@ -7,37 +7,54 @@ body {
 }
 
 .jumbotron {
-  background-color: #10142D;
-  padding: 18.5% 5px;
-  margin: 0px;
-  overflow: auto;
-  overflow: -moz-scrollbars-none;
+  background-color: #10142d;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
 }
+
+.br {
+  border-right: solid 1px #ffff;
+}
+
+.mt-65 {
+  margin-top: 65px;
+}
+
+/* .jumbotron.row {
+  position: absolute;
+  top: 50%;
+} */
 
 .profile-image-col {
   text-align: right;
 }
 
-@media only screen 
-and (max-device-width: 1024px) 
-and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .profile-image-col {
     text-align: center;
   }
   .profile-detail {
     text-align: center;
   }
-  .img-profile  {
-    margin-left: 0!important;
+  .img-profile {
+    margin-left: 0 !important;
   }
 }
 
-@media screen 
-and (max-device-width: 768px) {
+@media screen and (max-device-width: 768px) {
   .img-profile {
     animation: none;
   }
-  .codepen-link, .github-link, .linkedin-link, .mail-link {
+  .codepen-link,
+  .github-link,
+  .linkedin-link,
+  .mail-link {
     margin-top: 10px;
   }
 }
@@ -61,10 +78,12 @@ and (max-device-width: 768px) {
 }
 
 .interest {
+  font-size: medium;
   animation: fall3 3.9s forwards ease-in-out alternate;
 }
 
 .designation {
+  font-size: medium;
   padding-top: 15px;
   animation: fall3 4.9s forwards ease-in-out alternate;
 }
@@ -77,13 +96,13 @@ and (max-device-width: 768px) {
 
 .name span:after {
   content: " ";
-	background: #fff;
-	width: 0%;
-	height: 2px;
-	position: absolute;
-	left: 15px;
-	bottom: 83px;
-	transition: background-position 150ms ease-out;
+  background: #fff;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  left: 15px;
+  bottom: 83px;
+  transition: background-position 150ms ease-out;
 }
 
 .profile-links {
@@ -93,7 +112,7 @@ and (max-device-width: 768px) {
 
 @keyframes myAnim {
   from {
-    transform: translateX(-500px) scale(.5);
+    transform: translateX(-500px) scale(0.5);
   }
 }
 
@@ -110,7 +129,7 @@ and (max-device-width: 768px) {
   padding-bottom: 50px;
   text-align: center;
 }
-
+/* 
 .codepen-link, .github-link, .linkedin-link, .mail-link {
   text-align: center;
-}
+} */
