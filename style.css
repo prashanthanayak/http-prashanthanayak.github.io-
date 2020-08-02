@@ -1,0 +1,116 @@
+body {
+  overflow: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.jumbotron {
+  background-color: #10142D;
+  padding: 18.5% 5px;
+  margin: 0px;
+  overflow: auto;
+  overflow: -moz-scrollbars-none;
+}
+
+.profile-image-col {
+  text-align: right;
+}
+
+@media only screen 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+  .profile-image-col {
+    text-align: center;
+  }
+  .profile-detail {
+    text-align: center;
+  }
+  .img-profile  {
+    margin-left: 0!important;
+  }
+}
+
+@media screen 
+and (max-device-width: 768px) {
+  .img-profile {
+    animation: none;
+  }
+  .codepen-link, .github-link, .linkedin-link, .mail-link {
+    margin-top: 10px;
+  }
+}
+
+.img-profile {
+  border: solid 2px #fff;
+  margin-left: 50px;
+  animation: myAnim 2s;
+}
+
+.profile-detail {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.name {
+  padding-bottom: 15px;
+  animation: fall3 2.9s forwards ease-in-out alternate;
+}
+
+.interest {
+  animation: fall3 3.9s forwards ease-in-out alternate;
+}
+
+.designation {
+  padding-top: 15px;
+  animation: fall3 4.9s forwards ease-in-out alternate;
+}
+
+@keyframes fall3 {
+  0% {
+    transform: translateX(50em);
+  }
+}
+
+.name span:after {
+  content: " ";
+	background: #fff;
+	width: 0%;
+	height: 2px;
+	position: absolute;
+	left: 15px;
+	bottom: 83px;
+	transition: background-position 150ms ease-out;
+}
+
+.profile-links {
+  padding: 19% 15px;
+  background-color: darkorchid;
+}
+
+@keyframes myAnim {
+  from {
+    transform: translateX(-500px) scale(.5);
+  }
+}
+
+.hover-image:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.getInTouch {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.codepen-link, .github-link, .linkedin-link, .mail-link {
+  text-align: center;
+}
