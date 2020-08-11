@@ -26,11 +26,6 @@ body {
   margin-top: 65px;
 }
 
-/* .jumbotron.row {
-  position: absolute;
-  top: 50%;
-} */
-
 .profile-image-col {
   text-align: right;
 }
@@ -129,7 +124,10 @@ body {
   padding-bottom: 50px;
   text-align: center;
 }
-/* 
-.codepen-link, .github-link, .linkedin-link, .mail-link {
+
+.codepen-link,
+.github-link,
+.linkedin-link,
+.mail-link {
   text-align: center;
-} */
+}
