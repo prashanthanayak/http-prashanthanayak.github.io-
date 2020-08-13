@@ -74,11 +74,13 @@ body {
 
 .interest {
   font-size: medium;
+  font-style: italic;
   animation: fall3 3.9s forwards ease-in-out alternate;
 }
 
 .designation {
   font-size: medium;
+  font-style: italic;
   padding-top: 15px;
   animation: fall3 4.9s forwards ease-in-out alternate;
 }
